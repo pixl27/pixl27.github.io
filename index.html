@@ -16,15 +16,139 @@
         #logo {
             position: absolute;
     top: 25px;
-    left: 33px;
-    width: 113px; /* Adjust as needed */
-    height: 76px; /* Adjust as needed */
+    left: 49px;
+    width: 104px;
+    height: 76px;
     z-index: 300;
 }
+#logobot {
+    position: absolute;
+    top: 261%;
+    left: 54px;
+    width: 148px;
+    height: 76px;
+    z-index: 300;
+}
+.four-pointed-star{
+    position: absolute;
+    /* margin: 2em auto; */
+    margin-top: 12%;
+    margin-left: 34%;
+    width: 0em;
+    font-size: 106%;
+    z-index: -999;
+}
+
+.four-pointed-star:before{
+  content:"";
+  position:absolute;
+  background:#EEBE41;
+  width:1em;
+  height:1.15em;
+  transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after{
+  content:"";
+  position:absolute;
+  background:#EEBE41;
+  width:1em;
+  height:1.15em;
+  transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+#circle {
+    position: absolute;
+    top: -23px;
+    left: -43px;
+    width: 112px;
+    height: 91px;
+    border-radius: 50%;
+    background-color: #02272F;
+        }
+        .container-dot {
+            display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#circle2 {
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    width: 134px;
+    height: 127px;
+    border-radius: 50%;
+    background-color: #EEBE41;
+    z-index: -9;
+        }
+        .container-dot {
+            display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#circle3 {
+    position: absolute;
+    top: 159%;
+    left: 95%;
+    width: 134px;
+    height: 127px;
+    border-radius: 50%;
+    background-color: #EEBE41;
+    z-index: -9;
+        }
+        #circle4 {
+            position: absolute;
+    top: 254%;
+    left: -4%;
+    width: 134px;
+    height: 127px;
+    border-radius: 50%;
+    background-color: #02272F;
+    z-index: -9;
+        }
+        #circle5{
+    position: absolute;
+    top: 300%;
+    left: 96%;
+    width: 120px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;    background-color: #02272F;
+    z-index: -9;
+        }
+        .container-dot {
+            display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.square {
+    position: absolute;
+    left: 58%;
+    width: 430px;
+    height: 430px;
+    z-index: -9;
+    border: 55px solid #CFDEDB;
+    background: transparent;
+    transform: rotate(45deg);
+}
+
+.dotcontainer {
+            display: flex;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 53%;
+            width: 100%;
+        }
+        .dot {
+            width: 20px;
+        }
     </style>
 </head>
 <body>
     <img id="logo" src="https://i.postimg.cc/zXQXmR70/logotop.png" alt="Logo">
+    <div id="circle"></div>
 
     <div class="container">
         <div id="sidebar" style="display: none;">
@@ -46,6 +170,8 @@
     <!-- <button id="closeButton">Close</button> -->
 </div>
         <div class="row">
+            <div class="four-pointed-star"></div>
+
             <div class="col-md-6 content" style= "margin-top: 11%;">
                 <h1 style="font-size: 25px;color: brown;">"Avec Liberat’Ohr, Découvrez, Libérez, </br>Développez, Gérez, Et Maximisez Votre Potentiel "</h1>
                 <p style="color: black;">Si vous voulez atteindre l’épanouissement dans votre vie éducative ou professionnelle, vivez selon votre « Design »</p>
@@ -71,10 +197,28 @@
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                           </svg>                    </button>
                 </div>
-                <img style="margin-left: 47%;border-radius: 9%;" src="https://i.postimg.cc/HkdPz1qL/door.jpg" class="img-fluid ml-auto" alt="Responsive image" width="500" height="500">
+                <!-- <div class="container-dot">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div> -->
+                  <div id="dotcontainer" style="    position: absolute;
+                  top: 30%;
+                  left: 66.1%;
+                  z-index: -9;">
+                    <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
+                    <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
+                    <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
+                    <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
+                  </div>
+                            <img style="margin-left: 47%;border-radius: 9%;" src="https://i.postimg.cc/HkdPz1qL/door.jpg" class="img-fluid ml-auto" alt="Responsive image" width="500" height="500">
             </div>
         </div>
         <div class="row">
+            <div id="circle2"></div>
+
             <div class="col-md-6 content" style= "margin-top: 11%;">
                 <h1 style="font-size: 25px;color: black;">Pourquoi Liberathor </br> est si important ?</h1>
                 <p style="color: black;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
@@ -108,7 +252,11 @@
             <div class="col-md-6">
                 <div class="d-flex justify-content-end mb-3" style= "margin-top: 15%;">
                 </div>
-                <img style="margin-left: 20%;border-radius: 9%;" src="https://i.postimg.cc/6QC94vGP/man-holding-contract.jpg" class="img-fluid ml-auto " alt="Responsive image">
+                <div class="square"></div>
+
+                <img style="border-radius: 9%;" src="https://i.postimg.cc/6QC94vGP/man-holding-contract.jpg" class="img-fluid ml-auto " alt="Responsive image">
+                <div id="circle3"></div>
+
             </div>
         </div>
         <div class="row w-100" style="margin-top: 5%;">
@@ -126,7 +274,7 @@ que vous êtes peut-être confus dans votre connaissance de vos potentiels.</p>
                     <p style="text-align: justify;font-size: smaller;">Avant de passer à la découverte de vos potentiels, il est d’abord nécessaire d’évaluer 
                         où vous en êtes dans la poursuite de votre raison d’être par un questionnaire simple et rapide.</p>
                 </div>
-                <div class="position-absolute" style="bottom: -385px; right: 156px;">
+                <div class="position-absolute" style="bottom: -440px; right: 156px;">
                     <button type="button" class="btn btn-warning rounded-4">repondez au questionnaire <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
                         <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
@@ -135,15 +283,22 @@ que vous êtes peut-être confus dans votre connaissance de vos potentiels.</p>
             </div>
         </div>
         <div class="row" style="margin-top: 45%;">
+            <img id="logobot" src="https://i.postimg.cc/zXQXmR70/logotop.png" alt="Logo">
+
+            <div id="circle4"></div>
+
             <div class="col-md-6">
                 <p>+261 34 99 832 95</p>
                 <p>liberat’ohr@gmail.com </p>
                 <p>liberat-ohr@gmail.com </p>
             </div>
+            <div id="circle5"></div>
+
             <div class="col-md-6">
                 <h2>Nos Partenaires</h2>
                 <img width="500px" src="https://i.postimg.cc/YCmyPVH3/partenaire.png" alt="Partenaire">
             </div>
+
         </div>
     </div>
     <script>
