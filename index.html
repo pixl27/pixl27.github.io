@@ -23,7 +23,7 @@
 }
 #logobot {
     position: absolute;
-    top: 261%;
+    top: 1772px;
     left: 54px;
     width: 148px;
     height: 76px;
@@ -32,8 +32,8 @@
 .four-pointed-star{
     position: absolute;
     /* margin: 2em auto; */
-    margin-top: 12%;
-    margin-left: 34%;
+    margin-top: 9%;
+    margin-left: calc(26vw);
     width: 0em;
     font-size: 106%;
     z-index: -999;
@@ -73,7 +73,7 @@
 }
 #circle2 {
     position: absolute;
-    top: 100%;
+    top:  712px;
     left: -40px;
     width: 134px;
     height: 127px;
@@ -89,8 +89,8 @@
 }
 #circle3 {
     position: absolute;
-    top: 159%;
-    left: 95%;
+    top: 1112px;
+    left: calc(95vw);
     width: 134px;
     height: 127px;
     border-radius: 50%;
@@ -99,7 +99,8 @@
         }
         #circle4 {
             position: absolute;
-    top: 254%;
+    top: 1734px;
+
     left: -4%;
     width: 134px;
     height: 127px;
@@ -109,8 +110,8 @@
         }
         #circle5{
     position: absolute;
-    top: 300%;
-    left: 96%;
+    top: 2069px;
+    left:  calc(95vw);
     width: 120px;
     height: 50px;
     border-top-left-radius: 50px;
@@ -122,6 +123,10 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+.parent-container {
+    position: relative; /* or absolute, fixed, or sticky */
+    /* other styles */
 }
 .square {
     position: absolute;
@@ -149,6 +154,7 @@
 <body>
     <img id="logo" src="https://i.postimg.cc/zXQXmR70/logotop.png" alt="Logo">
     <div id="circle"></div>
+    <div id="circle2"></div>
 
     <div class="container">
         <div id="sidebar" style="display: none;">
@@ -205,19 +211,18 @@
                     <div class="dot"></div>
                   </div> -->
                   <div id="dotcontainer" style="    position: absolute;
-                  top: 30%;
-                  left: 66.1%;
+                  top: 216px;
+                  left: calc(94vw - 480px);
                   z-index: -9;">
                     <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
                     <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
                     <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
                     <img class="dot" src="https://i.postimg.cc/4NGmx3NL/dot-removebg-preview.png" alt="dot">
                   </div>
-                            <img style="margin-left: 47%;border-radius: 9%;" src="https://i.postimg.cc/HkdPz1qL/door.jpg" class="img-fluid ml-auto" alt="Responsive image" width="500" height="500">
+                            <img style="margin-left: calc(48vw - 480px);border-radius: 9%;" src="https://i.postimg.cc/HkdPz1qL/door.jpg" class="img-fluid ml-auto" alt="Responsive image" width="500" height="500">
             </div>
         </div>
         <div class="row">
-            <div id="circle2"></div>
 
             <div class="col-md-6 content" style= "margin-top: 11%;">
                 <h1 style="font-size: 25px;color: black;">Pourquoi Liberathor </br> est si important ?</h1>
